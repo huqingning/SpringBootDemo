@@ -1,0 +1,171 @@
+10:25:02.718 [restartedMain] INFO  c.e.demo.SpringBootDemoApplication - Starting SpringBootDemoApplication on W7-201703281209 with PID 21148 (E:\workSpace\SpringBootDemo\target\classes started by Administrator in E:\workSpace\SpringBootDemo)
+10:25:02.722 [restartedMain] INFO  c.e.demo.SpringBootDemoApplication - No active profile set, falling back to default profiles: default
+10:25:02.785 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5131941d: startup date [Tue Dec 04 10:25:02 CST 2018]; root of context hierarchy
+10:25:05.755 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+10:25:05.779 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+10:25:05.790 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:25:05.790 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+10:25:05.804 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files (x86)\java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Program Files (x86)\java\jdk1.8.0_144\bin;D:\Program Files (x86)\java\jdk1.8.0_144\jre\bin;D:\Program Files (x86)\apache-maven-3.3.3\bin;D:\Program Files\Git\cmd;D:\Program Files (x86)\Python;D:\Fiddler;.]
+10:25:05.884 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:25:05.885 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3099 ms
+10:25:05.952 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+10:25:05.955 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+10:25:05.956 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10:25:05.956 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10:25:05.956 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+10:25:06.636 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:25:06.907 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5131941d: startup date [Tue Dec 04 10:25:02 CST 2018]; root of context hierarchy
+10:25:06.989 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test]}" onto public java.lang.String com.example.demo.FtlIndexController.test()
+10:25:06.990 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/ftlIndex]}" onto public java.lang.String com.example.demo.FtlIndexController.ftlIndex()
+10:25:06.991 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/find/{page}/pageSize],methods=[GET]}" onto public java.lang.String com.example.demo.HelloWorldController.find(java.lang.Integer,java.lang.Integer)
+10:25:06.991 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/{id}/{name}],methods=[GET]}" onto public java.lang.String com.example.demo.HelloWorldController.hello(java.lang.Integer,java.lang.String)
+10:25:06.991 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/find/{id}],methods=[GET]}" onto public java.lang.String com.example.demo.HelloWorldController.findById(java.lang.Integer)
+10:25:06.991 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/insert/{name}],methods=[GET]}" onto public java.lang.String com.example.demo.HelloWorldController.insertUser(java.lang.String)
+10:25:06.992 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addMember]}" onto public java.lang.String com.example.demo.MemberController.addMember()
+10:25:06.993 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10:25:06.993 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10:25:07.023 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:25:07.023 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:25:07.036 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHander
+10:25:07.573 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:25:07.598 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+10:25:07.601 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+10:25:07.606 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+10:25:07.622 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+10:25:07.630 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+10:25:07.665 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+10:25:07.669 [restartedMain] INFO  c.e.demo.SpringBootDemoApplication - Started SpringBootDemoApplication in 5.516 seconds (JVM running for 6.922)
+10:25:37.763 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+10:25:37.763 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+10:25:37.795 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms
+10:26:01.617 [http-nio-8080-exec-6] INFO  com.example.demo.LoggerAophander - URL：http://localhost:8080/find/1
+10:26:01.618 [http-nio-8080-exec-6] INFO  com.example.demo.LoggerAophander - HTTP_METHOD：GET
+10:26:01.618 [http-nio-8080-exec-6] INFO  com.example.demo.LoggerAophander - IP：0:0:0:0:0:0:0:1
+10:26:01.712 [http-nio-8080-exec-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+10:26:02.035 [http-nio-8080-exec-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+10:26:02.093 [http-nio-8080-exec-6] INFO  com.example.demo.LoggerAophander - response：-
+10:26:31.394 [restartedMain] INFO  c.e.demo.SpringBootDemoApplication - Starting SpringBootDemoApplication on W7-201703281209 with PID 21752 (E:\workSpace\SpringBootDemo\target\classes started by Administrator in E:\workSpace\SpringBootDemo)
+10:26:31.399 [restartedMain] INFO  c.e.demo.SpringBootDemoApplication - No active profile set, falling back to default profiles: default
+10:26:31.663 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5e5a7cea: startup date [Tue Dec 04 10:26:31 CST 2018]; root of context hierarchy
+10:26:33.923 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+10:26:33.937 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+10:26:33.947 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:26:33.947 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+10:26:33.956 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files (x86)\java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Program Files (x86)\java\jdk1.8.0_144\bin;D:\Program Files (x86)\java\jdk1.8.0_144\jre\bin;D:\Program Files (x86)\apache-maven-3.3.3\bin;D:\Program Files\Git\cmd;D:\Program Files (x86)\Python;D:\Fiddler;.]
+10:26:34.035 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:26:34.035 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2372 ms
+10:26:34.097 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+10:26:34.100 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+10:26:34.101 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10:26:34.101 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10:26:34.101 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+10:26:34.543 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:26:34.772 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5e5a7cea: startup date [Tue Dec 04 10:26:31 CST 2018]; root of context hierarchy
+10:26:34.838 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test]}" onto public java.lang.String com.example.demo.FtlIndexController.test()
+10:26:34.838 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/ftlIndex]}" onto public java.lang.String com.example.demo.FtlIndexController.ftlIndex()
+10:26:34.839 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/find/{page}/{pageSize}],methods=[GET]}" onto public java.lang.String com.example.demo.HelloWorldController.find(java.lang.Integer,java.lang.Integer)
+10:26:34.839 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/{id}/{name}],methods=[GET]}" onto public java.lang.String com.example.demo.HelloWorldController.hello(java.lang.Integer,java.lang.String)
+10:26:34.839 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/find/{id}],methods=[GET]}" onto public java.lang.String com.example.demo.HelloWorldController.findById(java.lang.Integer)
+10:26:34.840 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/insert/{name}],methods=[GET]}" onto public java.lang.String com.example.demo.HelloWorldController.insertUser(java.lang.String)
+10:26:34.840 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addMember]}" onto public java.lang.String com.example.demo.MemberController.addMember()
+10:26:34.841 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10:26:34.842 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10:26:34.877 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:26:34.877 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:26:34.891 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHander
+10:26:35.338 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:26:35.361 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+10:26:35.362 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+10:26:35.366 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+10:26:35.379 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+10:26:35.387 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+10:26:35.400 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+10:26:35.404 [restartedMain] INFO  c.e.demo.SpringBootDemoApplication - Started SpringBootDemoApplication in 4.741 seconds (JVM running for 5.269)
+10:26:40.434 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+10:26:40.435 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+10:26:40.458 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+10:26:40.491 [http-nio-8080-exec-1] INFO  com.example.demo.LoggerAophander - URL：http://localhost:8080/find/1/2
+10:26:40.491 [http-nio-8080-exec-1] INFO  com.example.demo.LoggerAophander - HTTP_METHOD：GET
+10:26:40.491 [http-nio-8080-exec-1] INFO  com.example.demo.LoggerAophander - IP：0:0:0:0:0:0:0:1
+10:26:40.518 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+10:26:40.715 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+10:26:40.782 [http-nio-8080-exec-1] INFO  com.example.demo.LoggerAophander - response：-
+11:27:56.443 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.SpringBootDemoApplicationTests], using SpringBootContextLoader
+11:27:56.487 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.example.demo.SpringBootDemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+11:27:56.782 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+11:27:56.807 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@732c2a62, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@272ed83b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@41fecb8b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@120f102b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@625732, org.springframework.test.context.transaction.TransactionalTestExecutionListener@51dcb805, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@66498326, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@cad498c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1e6454ec, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2accdbb5, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@b62d79, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6631f5ca]
+11:27:57.161 [main] INFO  c.e.d.SpringBootDemoApplicationTests - Starting SpringBootDemoApplicationTests on W7-201703281209 with PID 15852 (started by Administrator in E:\workSpace\SpringBootDemo)
+11:27:57.162 [main] INFO  c.e.d.SpringBootDemoApplicationTests - No active profile set, falling back to default profiles: default
+11:27:57.192 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2584b82d: startup date [Tue Dec 04 11:27:57 CST 2018]; root of context hierarchy
+11:27:59.851 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 0 (http)
+11:27:59.908 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+11:27:59.920 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:27:59.920 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+11:27:59.956 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files (x86)\java\jdk1.8.0_144\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Program Files (x86)\java\jdk1.8.0_144\bin;D:\Program Files (x86)\java\jdk1.8.0_144\jre\bin;D:\Program Files (x86)\apache-maven-3.3.3\bin;D:\Program Files\Git\cmd;D:\Program Files (x86)\Python;D:\Fiddler;.]
+11:28:00.078 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:28:00.079 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2887 ms
+11:28:00.163 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+11:28:00.167 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+11:28:00.167 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+11:28:00.167 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+11:28:00.168 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+11:28:01.236 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+11:28:01.471 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2584b82d: startup date [Tue Dec 04 11:27:57 CST 2018]; root of context hierarchy
+11:28:01.545 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test]}" onto public java.lang.String com.example.demo.FtlIndexController.test()
+11:28:01.547 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/ftlIndex]}" onto public java.lang.String com.example.demo.FtlIndexController.ftlIndex()
+11:28:01.549 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/find/{page}/{pageSize}],methods=[GET]}" onto public java.lang.String com.example.demo.HelloWorldController.find(java.lang.Integer,java.lang.Integer)
+11:28:01.550 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/find/{id}],methods=[GET]}" onto public java.lang.String com.example.demo.HelloWorldController.findById(java.lang.Integer)
+11:28:01.550 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/{id}/{name}],methods=[GET]}" onto public java.lang.String com.example.demo.HelloWorldController.hello(java.lang.Integer,java.lang.String)
+11:28:01.550 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/insert/{name}],methods=[GET]}" onto public java.lang.String com.example.demo.HelloWorldController.insertUser(java.lang.String)
+11:28:01.551 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addMember]}" onto public java.lang.String com.example.demo.MemberController.addMember()
+11:28:01.555 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+11:28:01.556 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+11:28:01.591 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+11:28:01.591 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+11:28:01.607 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHander
+11:28:01.668 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+11:28:01.950 [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+11:28:02.229 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+11:28:02.237 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+11:28:02.270 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 49616 (http) with context path ''
+11:28:02.277 [main] INFO  c.e.d.SpringBootDemoApplicationTests - Started SpringBootDemoApplicationTests in 5.413 seconds (JVM running for 7.108)
+11:28:02.591 [Thread-4] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2584b82d: startup date [Tue Dec 04 11:27:57 CST 2018]; root of context hierarchy
+11:28:44.908 [restartedMain] INFO  c.e.demo.SpringBootDemoApplication - Starting SpringBootDemoApplication on W7-201703281209 with PID 16200 (E:\workSpace\SpringBootDemo\target\classes started by Administrator in E:\workSpace\SpringBootDemo)
+11:28:44.910 [restartedMain] INFO  c.e.demo.SpringBootDemoApplication - No active profile set, falling back to default profiles: default
+11:28:44.967 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3758237a: startup date [Tue Dec 04 11:28:44 CST 2018]; root of context hierarchy
+11:28:47.700 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+11:28:47.717 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+11:28:47.730 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:28:47.731 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+11:28:47.743 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files (x86)\java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Program Files (x86)\java\jdk1.8.0_144\bin;D:\Program Files (x86)\java\jdk1.8.0_144\jre\bin;D:\Program Files (x86)\apache-maven-3.3.3\bin;D:\Program Files\Git\cmd;D:\Program Files (x86)\Python;D:\Fiddler;.]
+11:28:47.836 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:28:47.836 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2869 ms
+11:28:47.908 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+11:28:47.911 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+11:28:47.911 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+11:28:47.912 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+11:28:47.912 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+11:28:48.360 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+11:28:48.634 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3758237a: startup date [Tue Dec 04 11:28:44 CST 2018]; root of context hierarchy
+11:28:48.703 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test]}" onto public java.lang.String com.example.demo.FtlIndexController.test()
+11:28:48.704 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/ftlIndex]}" onto public java.lang.String com.example.demo.FtlIndexController.ftlIndex()
+11:28:48.705 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/find/{page}/{pageSize}],methods=[GET]}" onto public java.lang.String com.example.demo.HelloWorldController.find(java.lang.Integer,java.lang.Integer)
+11:28:48.705 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/{id}/{name}],methods=[GET]}" onto public java.lang.String com.example.demo.HelloWorldController.hello(java.lang.Integer,java.lang.String)
+11:28:48.705 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/find/{id}],methods=[GET]}" onto public java.lang.String com.example.demo.HelloWorldController.findById(java.lang.Integer)
+11:28:48.705 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/insert/{name}],methods=[GET]}" onto public java.lang.String com.example.demo.HelloWorldController.insertUser(java.lang.String)
+11:28:48.706 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addMember]}" onto public java.lang.String com.example.demo.MemberController.addMember()
+11:28:48.707 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+11:28:48.708 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+11:28:48.750 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+11:28:48.750 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+11:28:48.766 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHander
+11:28:48.826 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+11:28:49.023 [restartedMain] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+11:28:49.252 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:28:49.274 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+11:28:49.275 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+11:28:49.279 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+11:28:49.289 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+11:28:49.296 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+11:28:49.312 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+11:28:49.315 [restartedMain] INFO  c.e.demo.SpringBootDemoApplication - Started SpringBootDemoApplication in 4.964 seconds (JVM running for 5.512)

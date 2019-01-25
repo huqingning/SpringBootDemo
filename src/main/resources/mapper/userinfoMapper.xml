@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo.mapper.userinfoMapper">
+    <resultMap id="BaseResultMap" type="com.example.demo.dao.userinfo">
+        <result column="uid" property="uid" />
+        <result column="uname" property="uname" />
+        <result column="password" property="password" />
+    </resultMap>
+    
+    <select id="findList" resultMap="BaseResultMap">
+        select * from userinfo
+    </select>
+
+    <select id="findById" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+        select * from userinfo where uid=#{uid}
+    </select>
+
+    <insert id="insert" parameterType="com.example.demo.dao.userinfo">
+        insert into userinfo(uid,uname,password) values(#{uid},#{uname},#{password})
+    </insert>
+</mapper>
